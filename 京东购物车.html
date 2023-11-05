@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东购物车</title>
+</head>
+<link rel="stylesheet" href="./font_02dh7mcehpum/iconfont.css">
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box {
+        width: 350px;
+        height: 300px;
+        position: relative;
+    }
+
+    i,
+    .word span {
+        color: red;
+    }
+
+    .ind {
+        width: 150px;
+        height: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+    }
+
+    .car {
+        margin-right: 10px;
+    }
+
+    .car span {
+        font-size: 13px;
+        color: white;
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 4px;
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 40%;
+    }
+
+    .car,
+    .word {
+        display: inline-block;
+    }
+
+    i {
+        font-size: 17px !important;
+    }
+
+    .ind:hover {
+        border: 1px red solid;
+    }
+
+    .show {
+        width: 380px;
+        height: 143px;
+        border: 1px red solid;
+        position: absolute;
+        top: 41px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        background-image: url(./nr.jpg);
+    }
+
+    .ind:hover+.show {
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="ind">
+            <div class="car">
+                <i class="iconfont">&#xe63f;</i>
+                <i class="iconfont">&#xe63f;</i>
+                <span>1</span>
+            </div>
+            <div class="word">
+                <span>我的购物车</span>
+            </div>
+        </div>
+        <div class="show"></div>
+    </div>
+</body>
+
+</html>
